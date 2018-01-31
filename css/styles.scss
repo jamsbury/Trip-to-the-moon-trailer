@@ -1,0 +1,19 @@
+@import "uikit.min";
+@import "mediaplayer.min";
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+// header
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: Lobster Two;
+}
+
+.char8 {
+  margin-right: -3px;
+}
