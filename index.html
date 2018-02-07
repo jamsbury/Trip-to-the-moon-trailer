@@ -6,54 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="img/favicons/manifest.json">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="img/favicons/manifest.json">
 
-  <!--  YOUR STYLES  -->
+  <!--  Styles  -->
   <link rel="stylesheet" href="css/styles.processed.css">
 
-  <title>Movie Trailer</title>
+  <title>A Trip To The Moon</title>
 </head>
 
-<body class="uk-container">
+<body>
 
   <!-- Page Wrapper -->
-  <main uk-grid>
+  <main class="uk-container uk-grid">
+
+    <!-- Trailer -->
+    <div class="vidwrap">
+      <video class="uk-width-1-1">
+        <source controls="true" src="https://jamsbury.github.io/atriptothemoon/video/trailer.mp4" type="video/mp4" />
+        <source controls="true" src="https://jamsbury.github.io/atriptothemoon/video/trailer.webm" type="video/webm" />
+        Oops! Your browser does not support the video tag.
+      </video>
+    </div>
 
     <!-- Header -->
     <header class="uk-width-1-1">
-      <h1>A Trip To The Moon</h1>
-    </header>  
-      
-    <!-- Trailer -->
-    <video>
-      <source src="https://jamsbury.github.io/atriptothemoon/video/trailer.mp4" type="video/mp4" />
-      <source src="https://jamsbury.github.io/atriptothemoon/video/trailer.webm" type="video/webm" />
-    </video>
+      <img src="img/atttm.png" alt="A Trip to the Moon" />
+    </header>
 
     <!-- Content -->
-    <article class="uk-width-1-2@s">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo expedita necessitatibus harum mollitia in sunt perspiciatis fugit provident magnam deleniti quasi minima, at quo doloribus accusantium inventore recusandae optio aperiam! Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in saepe nemo molestiae dignissimos ipsa enim, vel illo incidunt officia! Dolorem suscipit odio aliquid non libero sapiente! Consequuntur, error, quam!</p>
+    <article class="uk-width-1-2@m">
+      <p>A Trip to the Moon is a story about a group of brave astronauts that travel to the moon. Shortly after arriving and taking in the beauty of the stars, they realize they are not alone. The film was an international success at the time of its release and
+        was profoundly influential on later filmmakers. The innovative editing and special effects techniques became widely used and eventually became an important element within the medium of film. The has been referenced and remade, but the original
+        still speaks for itself.</p>
     </article>
 
     <!-- Aside -->
-    <aside class="uk-width-1-2@s">
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
+    <aside class="uk-width-1-2@m links">
+      <a href="https://en.wikipedia.org/wiki/A_Trip_to_the_Moon">
+        <div class="uk-button uk-button-default uk-button-large uk-width-1-1"><p>Wikipedia</p></div>
+      </a>
+      <a href="https://www.moma.org/collection/works/%2089492">
+        <div class="uk-button uk-button-default uk-button-large uk-width-1-1"><p>MoMA</p></div>
+      </a>
+      <a href="http://www.imdb.com/title/tt0000417/">
+        <div class="uk-button uk-button-default uk-button-large uk-width-1-1"><p>IMDB</p></div>
+      </a>
     </aside>
-  
-  <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="uk-width-1-1">
-      <p>Studio Films Copyright Year</p>
+      <p>Star Film Company ©1902</p>
     </footer>
-    
+
   </main>
 
   <!-- jQuery Library   -->
