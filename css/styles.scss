@@ -21,10 +21,6 @@ body {
   min-width: 100%;
   padding: 0;
   margin: 0;
-  background-image: url("../img/mobilebgblack.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 main.uk-container {
@@ -37,12 +33,12 @@ main.uk-container {
 .uk-grid > * {
   padding: 0;
 }
-
+  
 // header
 
-header.uk-width-1-1 {
+header {
   width: 95%;
-  margin: 0.5em auto 2.5em auto;
+  margin: auto;
   padding: 0;
 }
 
@@ -61,20 +57,6 @@ h1 {
   padding: 0.5em 0 1em 0;
 }
 
-// video
-
-video {
-  position: relative;
-  min-width: 100%;
-  width: auto;
-  height: auto;
-  background-size: contain;
-}
-
-div.vidwrap {
-  width: 100%;
-}
-
 // copy
 
 p {
@@ -84,133 +66,66 @@ p {
   font-size: 1em;
 }
 
-article p {
-  padding: 0 0 1.5em 0;
+article {
+  padding: 1.25em 0 0 0;
 }
 
 aside.links {
+  text-decoration: none;
   color: black;
-  margin: 0 auto;
-  padding: 0;
+  margin: auto;
+  padding: 1em 0;
 }
-
-ul {
-  margin: 0 2.5%;
-  padding: 0;
-}
-
-ul a li p {
-  margin: auto auto;
-  display: inline;
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  padding: .25em 1em;
-  border-radius: 3em 3em;
-}
-
-// originally planned on using a drop shadow here
-// some code from this page remains for the transition on .uk-button:
-// http://tobiasahlin.com/blog/how-to-animate-box-shadow/
 
 .uk-button {
-  text-align: left;
-  width: 100%;
-  height: 7em;
-  font-size: 1em;
+  transition-duration: .25s;
   text-transform: none;
   background-color: #444444;
-  border: 2px solid #222222;
-  margin: 0 auto 0.5em auto;
-  transition: all 0.4s cubic-bezier(0.15, 0.80, 0.45, 1);
+  border: none;
+  margin: 0 auto 5px auto;
 }
 
 .uk-button:hover {
   background-color: #777777;
-  transform: scale(1.05, 1.05);
+  border: none;
 }
-
-li.link1 {
-  background-image: url("../img/rest.jpeg");
-  background-position: 0 -2em;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-li.link2 {
-  background-image: url("../img/cannon.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 110% auto;
-  text-align: right;
-}
-
-li.link3 {
-  background-image: url("../img/launch.jpg");
-  background-position: 0 -5em;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-
 
 footer {
   text-align: right;
-  height: 15em;
   max-width: 100%;
-  margin: 1em 0 0.25em 0;
+  height: 40vh;
+  background-image: url("../img/mobilebgblack.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer p {
   font-size: 0.75em;
 }
 
-@media screen and (min-width: 650px) {
-  main.uk-container {
-    max-width: 75%;
-  }
-  aside.links {
-    margin: -0.8em auto 2em auto;
-  }
-  
-  .uk-button {
-    height: 8em;
-  }
-  
-  body {
-    background-image: url("../img/mobilebgblack.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  footer {
-    height: 20em;
-  }
+// video
+
+video {
+  position: relative;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  background-size: contain;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 1200px) {
-  main.uk-container {
-    max-width: 60%;
-  }
-  
-    .uk-button {
-    height: 6em;
-  }
-  
-  ul {
-    margin: 1em 2.5%;
-    padding: 0;
-  }
+div.vidwrap {
+  width: 100%;
+}
 
-  body {
-    background-image: url("../img/desktopbg.jpg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+@media screen and (min-width: 650px) {
+  main {
+    max-width: 100%;
+    margin: auto;
   }
   
-  footer {
-    height: 27em;
+  aside.links {
+    width: 
   }
 }
