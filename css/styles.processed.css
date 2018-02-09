@@ -11452,7 +11452,7 @@ iframe.uk-cover {
 }
 
 html {
-  background-color: #000000;
+  background-color: #030D18;
 }
 
 p,
@@ -11465,6 +11465,7 @@ body {
   min-width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #030D18;
   background-image: url("../img/mobilebgblack.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
